@@ -105,7 +105,7 @@ Created three virtual machines that simulate a small enterprise environment. Eac
 Each virtual machine was configured with dedicated CPU, memory, storage, and networking resources to support future security monitoring and centralized log collection.
 </p>
 
-<img src="https://i.imgur.com/a/tIxA4rG" width="900">
+<img width="1913" height="982" alt="Screenshot 2026-06-27 204652" src="https://github.com/user-attachments/assets/c87667e0-6cfe-4f7c-a920-fa58c931e1e2" />
 
 <p><em>Figure 1. Oracle VirtualBox displaying the three virtual machines that make up the Blue Team SOC lab infrastructure.</em></p>
 ---
