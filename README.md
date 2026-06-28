@@ -71,19 +71,29 @@ The objective of this project was to design and deploy the foundational infrastr
 Installed Oracle VirtualBox to provide the virtualization platform used to build the SOC environment.
 
 
+<img width="1496" height="924" alt="Screenshot 2026-06-27 232056" src="https://github.com/user-attachments/assets/b5cc6a73-6e90-425b-8bc9-3533bea9fb81" />
 ---
 
 ### Step 2 - Download Operating System Images
 
-Downloaded the required ISO images:
+Downloaded the operating system images required to build the Blue Team SOC lab environment.
 
-- Windows 10
-- Ubuntu Server
-- Ubuntu Desktop
+The following operating systems were selected:
 
-These operating systems will simulate enterprise endpoints and the centralized monitoring server.
+- **Ubuntu Server 22.10 LTS** – Centralized monitoring server (SOC Watchtower)
+- **Ubuntu Desktop 22.10 LTS** – Linux endpoint for security monitoring
+- **Windows 10 Enterprise** – Windows endpoint for telemetry collection and future threat simulations
+  
+<img width="1895" height="890" alt="Screenshot 2026-06-27 232845" src="https://github.com/user-attachments/assets/91c70eda-838e-463d-bc18-ffd3ff00eefe" />
+<img width="1900" height="949" alt="Screenshot 2026-06-27 232816" src="https://github.com/user-attachments/assets/4efa552f-2f13-4cab-9508-be5db86f9d52" />
 
-**Screenshot**
+
+Ubuntu **22.10 LTS** was selected because it is a Long-Term Support (LTS) release that closely aligns with operating systems commonly deployed in enterprise environments. Using an LTS release provides long-term security updates, stability, and compatibility with modern security tools that will be installed later in the project.
+
+This operating system selection establishes a realistic foundation for deploying enterprise security monitoring solutions such as Elastic Stack, Kibana, Elastic Agent, and Sysmon.
+
+
+
 
 *(Insert ISO download screenshot here.)*
 
