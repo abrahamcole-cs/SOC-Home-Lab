@@ -183,7 +183,7 @@ During installation, the server was configured with a dedicated hostname, admini
 
 Selected **English** as the installation language before beginning the Ubuntu Server installation.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_20_48_40" src="https://github.com/user-attachments/assets/e3954955-f358-4797-9182-23ba23fc5caf" />
 
 ---
 
@@ -191,7 +191,7 @@ Selected **English** as the installation language before beginning the Ubuntu Se
 
 No HTTP proxy was required for this lab environment, so the proxy configuration was left blank.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_20_54_59 proxy" src="https://github.com/user-attachments/assets/3a854676-baf3-4c89-bc0d-ddb1ee95abc3" />
 
 ---
 
@@ -199,7 +199,7 @@ No HTTP proxy was required for this lab environment, so the proxy configuration 
 
 Allowed Ubuntu to download the latest version of the installer before continuing the installation process. Updating the installer ensures the latest fixes and installation improvements are applied.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_20_55_53 update server" src="https://github.com/user-attachments/assets/6d127675-6c10-4f5c-abb8-6de8eb1704ea" />
 
 ---
 
@@ -212,7 +212,7 @@ Configured the server with the following information:
 
 This server will later host the centralized monitoring and security infrastructure.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_21_00_00" src="https://github.com/user-attachments/assets/92dd1586-7293-410b-8e75-e18b5807140f" />
 
 ---
 
@@ -222,7 +222,7 @@ Enabled the **OpenSSH Server** package during installation.
 
 Installing OpenSSH allows the server to be managed remotely from another machine without requiring direct access through VirtualBox.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_21_00_35 ssh" src="https://github.com/user-attachments/assets/a3f570c8-dabd-4b17-ba05-4d3aa5772a66" />
 
 ---
 
@@ -230,7 +230,7 @@ Installing OpenSSH allows the server to be managed remotely from another machine
 
 Ubuntu successfully completed installation and configured all required system packages.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_21_00_52 complete intall tower" src="https://github.com/user-attachments/assets/441bf22e-77ae-4977-ba78-f01fff3a4e11" />
 
 ---
 
@@ -238,7 +238,7 @@ Ubuntu successfully completed installation and configured all required system pa
 
 After rebooting, Ubuntu successfully initialized all required system services and completed the boot process.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_21_01_47 reboot" src="https://github.com/user-attachments/assets/5b97489b-0d86-4bd6-9290-1a6599636afb" />
 
 ---
 
@@ -246,7 +246,7 @@ After rebooting, Ubuntu successfully initialized all required system services an
 
 Successfully authenticated using the administrator account created during installation.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_21_11_40 login" src="https://github.com/user-attachments/assets/5e342422-9254-47aa-9760-6f5806849808" />
 
 ---
 
@@ -254,7 +254,7 @@ Successfully authenticated using the administrator account created during instal
 
 Verified successful login and confirmed the operating system version, network configuration, and system health.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_21_14_50 login success" src="https://github.com/user-attachments/assets/06644500-525c-4d44-a9bc-8bc51e9828db" />
 
 ---
 
@@ -268,122 +268,387 @@ ip a
 
 Confirmed the server received both NAT and Host-Only IP addresses, allowing internet connectivity and communication with other virtual machines.
 
-<img width="900" src="https://github.com/user-attachments/assets/..." />
-
----
-
-### Figure 4.11 – Connectivity Testing
-
-Validated communication between the SOC Watchtower and other systems using ICMP.
-
-Successful connectivity tests included:
-
-- Host Computer
-- Ubuntu Desktop (DevOps Workstation)
-- Windows 10 Workstation
-
-During testing, the Windows workstation initially failed to respond due to Windows Firewall blocking ICMP requests.
-
-After enabling ICMP Echo Requests within Windows Defender Firewall, connectivity was successfully established.
-
-<img width="900" src="https://github.com/user-attachments/assets/..." />
-
-<img width="900" src="https://github.com/user-attachments/assets/..." />
-
-<img width="900" src="https://github.com/user-attachments/assets/..." />
-
-<img width="900" src="https://github.com/user-attachments/assets/..." />
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_21_15_54 IP A -NetworkInterfaces-" src="https://github.com/user-attachments/assets/230debc8-dac0-4d40-9361-32ad22f014f2" />
 
 ---
 
 ## Outcome
 
-Successfully deployed and configured the Ubuntu Server SOC Watchtower, enabled secure remote administration through OpenSSH, verified network interfaces, and confirmed communication with all virtual machines.
+Successfully deployed and configured the Ubuntu Server **SOC Watchtower**, including the installation of Ubuntu Server, creation of the administrator account, configuration of the system hostname, and installation of the OpenSSH Server package.
 
-The monitoring server is now prepared for deployment of the Elastic Stack, centralized log collection, and future security monitoring activities.
+Verified that the operating system was installed successfully, confirmed the server booted correctly, and identified the available network interfaces using the `ip a` command.
 
-### Step 5 - Install Ubuntu Server
+The SOC Watchtower is now prepared for virtual network configuration, remote administration, and the deployment of centralized security monitoring tools in the next phase of the project.
 
-Installed Ubuntu Server to serve as the centralized monitoring server that will later host the SOC monitoring stack.
+
+# Step 5 - Configure the DevOps Workstation (Ubuntu Desktop)
+
+The Ubuntu Desktop virtual machine was configured to serve as the **DevOps Workstation**, providing a graphical Linux environment for administering the SOC infrastructure. This workstation will be used to manage virtual machines, remotely administer the SOC Watchtower, and support future deployment and testing of security monitoring tools.
+
+---
+
+### Figure 5.1 – Begin Ubuntu Desktop Installation
+
+Selected **Install Ubuntu** to begin deploying the Ubuntu Desktop operating system.
+
+<img width="1280" height="800" alt="VirtualBox_Dev Ops WorkStation DSKTOP_27_06_2026_21_20_20 Installation" src="https://github.com/user-attachments/assets/d1d12960-3d9a-4b1a-8783-49725cf91600" />
+
+---
+
+### Figure 5.2 – Select Installation Options
+
+Configured the installation using the following options:
+
+- **Minimal Installation** to reduce unnecessary software and resource usage.
+- **Download updates while installing Ubuntu** to ensure the system was current immediately after installation.
+- **Install third-party software** to improve hardware compatibility and multimedia support.
+
+These options provide a lightweight workstation while maintaining compatibility with enterprise hardware and future software installations.
+
+<img width="1280" height="800" alt="VirtualBox_Dev Ops WorkStation DSKTOP_27_06_2026_21_21_37  Minimal   better Hardware support" src="https://github.com/user-attachments/assets/74a442f0-d0af-4e02-aca2-f648482223aa" />
+
+---
+
+### Figure 5.3 – Configure Storage
+
+Selected **Erase disk and install Ubuntu**.
+
+Since this virtual machine uses a dedicated virtual hard disk within Oracle VirtualBox, erasing the disk only affects the virtual machine and does not modify the host operating system.
+
+<img width="1280" height="800" alt="VirtualBox_Dev Ops WorkStation DSKTOP_27_06_2026_21_22_37 Erase disk" src="https://github.com/user-attachments/assets/12206816-8e0a-42a4-80d9-2a3f7833c641" />
+
+---
+
+### Figure 5.4 – Configure User Profile
+
+Created the administrator account for the DevOps workstation.
 
 Configured:
 
-- Administrative account
-- Network settings
-- System updates
+- Display Name: **DEV Cole**
+- Hostname: **dev-VirtualBox**
+- Username: **dev**
 
-Verified successful installation.
+This account will be used to administer the workstation and perform future system management tasks.
 
-**Screenshot**
-
-*(Insert Ubuntu Server screenshot here.)*
+<img width="1280" height="800" alt="VirtualBox_Dev Ops WorkStation DSKTOP_27_06_2026_21_24_01 Login setup" src="https://github.com/user-attachments/assets/8320b85a-9eca-447e-b4d8-b3e752224f0b" />
 
 ---
 
-### Step 6 - Install Ubuntu Desktop
+### Figure 5.5 – Ubuntu Desktop Installation
 
-Installed Ubuntu Desktop to simulate a monitored Linux workstation.
+Ubuntu Desktop copied the required system files and completed the installation process.
 
-Verified successful installation and desktop functionality.
-
-**Screenshot**
-
-*(Insert Ubuntu Desktop screenshot here.)*
+<img width="1280" height="800" alt="VirtualBox_Dev Ops WorkStation DSKTOP_27_06_2026_21_25_17 instal confirg" src="https://github.com/user-attachments/assets/7d65287a-db05-4851-bddb-4e11c1e3ae3a" />
 
 ---
 
-### Step 7 - Install Windows 10
+### Figure 5.6 – First Login
 
-Installed Windows 10 to represent an enterprise Windows endpoint that will later generate security events for monitoring.
+Successfully logged into the Ubuntu Desktop environment and verified that the operating system installed correctly.
 
-Verified successful installation.
-
-**Screenshot**
-
-*(Insert Windows installation screenshot here.)*
+<img width="1280" height="800" alt="VirtualBox_Dev Ops WorkStation DSKTOP_27_06_2026_21_33_58 Succesfull login creation" src="https://github.com/user-attachments/assets/bdf95890-eb69-48f6-96fe-2a27049a6a43" />
 
 ---
 
-### Step 8 - Verify Network Connectivity
+### Figure 5.7 – Verify Network Interfaces
 
-Performed connectivity testing using ICMP (ping).
+Executed the following command to verify the workstation's network configuration.
 
-Verified:
+```bash
+ip a
+```
 
-- Endpoint communication
-- Host communication
-- Proper virtual network configuration
+Confirmed that both NAT and Host-Only network adapters were assigned valid IP addresses, allowing communication with the host computer and the remaining virtual machines.
 
-**Screenshot**
-
-*(Insert successful ping screenshot here.)*
-
----
-
-### Step 9 - Configure SSH Remote Access
-
-Configured SSH on the Ubuntu Server and successfully connected remotely from the host machine.
-
-This allows remote administration of the monitoring server without direct console access.
-
-**Screenshot**
-
-*(Insert SSH terminal screenshot here.)*
+<img width="1280" height="800" alt="VirtualBox_Dev Ops WorkStation DSKTOP_27_06_2026_21_35_17 network interfaces" src="https://github.com/user-attachments/assets/732550f3-5301-42b5-97d6-8d951de8edda" />
 
 ---
 
 ## Outcome
 
-Successfully deployed the foundational infrastructure for a Blue Team SOC home lab consisting of multiple virtual machines, enterprise-style virtual networking, and remote server administration.
+Successfully deployed and configured the Ubuntu Desktop **DevOps Workstation**.
 
-This environment is now ready for the next phase of the project, which will include:
+Verified successful installation of the operating system, configured the administrator account, and confirmed network connectivity by validating the assigned network interfaces.
 
-- Elastic Stack
-- Kibana
-- Elastic Agent
-- Sysmon
+The DevOps Workstation is now prepared to remotely administer the SOC Watchtower, manage the virtual lab environment, and support the deployment and testing of future security monitoring solutions.
+
+
+# Step 6 - Configure the Windows 10 Workstation
+
+The Windows 10 virtual machine was configured to serve as the primary monitored Windows endpoint within the Blue Team SOC lab. This workstation will later generate Windows event logs, Sysmon telemetry, PowerShell activity, and security events that will be collected and analyzed by the SOC Watchtower.
+
+---
+
+### Figure 6.1 – Begin Windows 10 Installation
+
+Booted the Windows 10 Enterprise installation media and verified the installer launched successfully.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_21_36_44" src="https://github.com/user-attachments/assets/0aad7edd-fc42-4c3c-92f1-3b4a8e12ecb5" />
+
+---
+
+### Figure 6.2 – Select Windows Edition
+
+Selected **Windows 10 Pro (64-bit)** for deployment.
+
+Windows 10 Pro provides enterprise management capabilities and administrative features commonly used in business environments, making it appropriate for a cybersecurity lab.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_21_37_44 windows 10 pro versio" src="https://github.com/user-attachments/assets/1740eba6-21ce-4bed-92ed-3658c3032e3c" />
+---
+
+### Figure 6.3 – Configure Storage
+
+Selected the unallocated virtual disk and allowed Windows Setup to automatically create the required system partitions.
+
+Because the workstation is installed on a dedicated VirtualBox virtual disk, these partitions only affect the virtual machine and do not modify the host operating system.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_21_38_47 create windows partion" src="https://github.com/user-attachments/assets/fb9e53d0-c53c-42c9-b15e-7598afb893d0" />
+
+---
+
+### Figure 6.4 – Windows Installation
+
+Windows copied the required installation files, installed system components, and completed the operating system deployment.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_21_46_31 setup" src="https://github.com/user-attachments/assets/1af28eb2-504f-4748-8a5a-eb82d621c596" />
+
+---
+
+### Figure 6.5 – Initial Device Configuration
+
+Selected **Limited Experience** instead of signing in with a Microsoft account.
+
+Using a local account simplifies administration within the isolated lab environment and better reflects systems commonly encountered during enterprise troubleshooting and security investigations.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_21_58_10 limited ex for personal use" src="https://github.com/user-attachments/assets/dea926b2-fd64-4d7a-a78b-dcaaba5bcb6c" />
+
+---
+
+### Figure 6.6 – Configure Local Administrator Account
+
+Created the local workstation account.
+
+**Computer Name**
+
+- DesignerWorkstation
+
+This workstation will later serve as the monitored Windows endpoint for security monitoring exercises.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_21_58_43 DesignerWorkstation" src="https://github.com/user-attachments/assets/c94203fc-ba05-450d-83e4-26c53f1261c1" />
+
+---
+
+### Figure 6.7 – Configure Privacy Settings
+
+Disabled optional privacy, telemetry, advertising, and tracking features that are unnecessary within the isolated virtual lab.
+
+Reducing unnecessary background services creates a cleaner environment for observing system activity generated during future security testing.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_22_00_00 TurnTracking Off" src="https://github.com/user-attachments/assets/8286f061-a0df-4601-8e17-95dbe520103e" />
+
+---
+
+### Figure 6.8 – Successful Windows Installation
+
+Verified successful installation and confirmed that Windows booted correctly into the desktop environment.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_22_02_07 Success Creation" src="https://github.com/user-attachments/assets/f7f50b61-0cbc-40d1-9e7c-006bfaa24246" />
+
+---
+
+### Figure 6.9 – Verify Network Configuration
+
+Executed the following command to verify the workstation's assigned network interfaces.
+
+```powershell
+ipconfig
+```
+
+Confirmed that both NAT and Host-Only network adapters received valid IP addresses, allowing internet connectivity while enabling communication with the remaining virtual machines.
+
+<img width="1024" height="768" alt="VirtualBox_WindowWorkstation_27_06_2026_22_03_07 network Adapters" src="https://github.com/user-attachments/assets/b3e26bb4-38aa-4fda-abc2-e9339c6e7435" />
+
+---
+
+## Outcome
+
+Successfully deployed and configured the Windows 10 workstation.
+
+Verified the operating system installation, configured a local administrator account, applied privacy settings appropriate for an isolated lab environment, and confirmed the workstation's network configuration.
+
+The Windows workstation is now prepared for deployment of Sysmon, Elastic Agent, endpoint telemetry collection, and future attack simulations within the Blue Team SOC environment.
+---
+
+# Step 7 - Configure Remote Administration & Validate Network Connectivity
+
+After completing the operating system installations, the next objective was to verify communication between all systems within the virtual lab.
+
+The SOC Watchtower (Ubuntu Server) was remotely accessed from the host computer using **OpenSSH**, allowing administration without interacting directly with the VirtualBox console.
+
+Network connectivity was then validated between every virtual machine to ensure the environment was properly configured for future centralized monitoring and log collection.
+
+---
+
+### Figure 7.1 – Establish Remote SSH Session
+
+Connected to the SOC Watchtower from the Windows host using OpenSSH.
+
+```powershell
+ssh defender__cole@192.168.56.104
+```
+
+During the initial connection, SSH prompted for host verification before adding the server's fingerprint to the local **known_hosts** file.
+
+After authentication, a secure remote shell session was successfully established.
+
+<img width="1367" height="448" alt="Screenshot 2026-06-27 222459" src="https://github.com/user-attachments/assets/3565f07d-01e3-4013-8342-6f9903eb3344" />
+
+---
+
+### Figure 7.2 – Verify Network Interfaces
+
+Verified that the SOC Watchtower was assigned both NAT and Host-Only network adapters.
+
+```bash
+ip a
+```
+
+Confirmed that the server received:
+
+- NAT Adapter: `10.0.2.15`
+- Host-Only Adapter: `192.168.56.104`
+
+These interfaces provide internet connectivity while allowing communication between virtual machines.
+
+<img width="1390" height="405" alt="Screenshot 2026-06-27 222531" src="https://github.com/user-attachments/assets/c5bc6c6f-96b4-43b9-bd82-3ba1e88c39c6" />
+
+---
+
+### Figure 7.3 – Test Connectivity to the Host Computer
+
+Performed an ICMP connectivity test between the SOC Watchtower and the Windows host computer.
+
+The initial ping request failed because Windows Defender Firewall was blocking inbound ICMP Echo Requests.
+
+<img width="800" height="600" alt="VirtualBox_SOC WatchTower LIVESERVER_27_06_2026_22_14_01 PING Ubuntu desktop" src="https://github.com/user-attachments/assets/2b2bd7db-4061-468b-af91-4bb7c8fa243b" />
+
+---
+
+### Figure 7.4 – Enable ICMP Echo Requests
+
+The initial connectivity test indicated that the Windows host was blocking inbound ICMP Echo Requests.
+
+To allow the SOC Watchtower to communicate with the host system, Windows Defender Firewall was configured to permit inbound ICMPv4 traffic.
+
+#### Step 1 – Open Windows Defender Firewall
+
+Opened **Windows Defender Firewall** from the Windows Control Panel.
+
+<img width="626" height="85" alt="Screenshot 2026-06-28 002615" src="https://github.com/user-attachments/assets/fd205daf-babf-4ddc-85d8-0e3e381d6cf2" />
+
+---
+
+#### Step 2 – Open Advanced Settings
+
+Selected **Advanced settings** to launch **Windows Defender Firewall with Advanced Security**.
+
+<img width="229" height="37" alt="Screenshot 2026-06-28 002508" src="https://github.com/user-attachments/assets/5b5c21e6-9201-4259-a1eb-092202604c12" />
+---
+
+#### Step 3 – Navigate to Inbound Rules
+
+Selected **Inbound Rules** to view and manage incoming firewall rules.
+
+<img width="142" height="19" alt="Screenshot 2026-06-28 002531" src="https://github.com/user-attachments/assets/d7c1e4e0-e4ad-4065-a94f-a1891c568878" />
+
+---
+
+#### Step 4 – Enable ICMPv4 Echo Requests
+
+Located and enabled the **File and Printer Sharing (Echo Request – ICMPv4-In)** inbound firewall rule.
+
+This rule allows the Windows host computer to respond to ICMP Echo Requests (ping) from other systems on the Host-Only network, enabling connectivity testing between the host computer and the SOC Watchtower.
+
+<img width="223" height="33" alt="Screenshot 2026-06-28 002547" src="https://github.com/user-attachments/assets/ab33350d-fbee-4766-b106-09dfbaf4bdc6" />
+
+---
+
+### Figure 7.5 – Verify Host Connectivity
+
+Repeated the ping test after enabling the firewall rule.
+
+The host computer successfully responded to ICMP requests, confirming communication between the SOC Watchtower and the host operating system.
+
+<img width="1428" height="593" alt="Screenshot 2026-06-27 222555" src="https://github.com/user-attachments/assets/eb29e19a-db8c-40fa-a4e0-01da312134da" />
+
+---
+
+### Figure 7.6 – Verify Virtual Machine Connectivity
+
+Tested communication between the SOC Watchtower and the remaining virtual machines.
+
+Successfully verified:
+
+- Ubuntu Desktop (DevOps Workstation)
+- Windows 10 Workstation
+
+During testing, the Windows workstation initially failed to respond because its Windows Defender Firewall was also blocking ICMP Echo Requests.
+
+After enabling the same inbound firewall rule on the Windows workstation, all systems communicated successfully.
+
+<img width="800" height="115" alt="defender" src="https://github.com/user-attachments/assets/36c2e0d8-a5b9-48f2-be60-e98f77766ae2" />
+
+<img width="591" height="148" alt="Screenshot 2026-06-28 004114" src="https://github.com/user-attachments/assets/8aa7a4d1-9df9-46ba-991c-ecd74abd955c" />
+
+<img width="593" height="56" alt="Screenshot 2026-06-28 004406" src="https://github.com/user-attachments/assets/f5bcc28c-d26f-4b3c-a0b6-946a649878e7" />
+
+<img width="579" height="110" alt="Screenshot 2026-06-28 004411" src="https://github.com/user-attachments/assets/8f4bba40-f9b5-479a-8156-6204fdcd7e23" />
+
+---
+
+## Outcome
+
+Successfully configured secure remote administration using OpenSSH and validated network connectivity across the Blue Team SOC lab.
+
+Resolved Windows Defender Firewall restrictions by enabling the **File and Printer Sharing (Echo Request – ICMPv4-In)** inbound rule on both the host computer and Windows workstation, allowing successful ICMP communication between all systems.
+
+The virtual lab now supports reliable communication between every machine, providing the foundation required for centralized logging, endpoint monitoring, and future security operations exercises.
+
+## Outcome
+
+Successfully designed, deployed, and documented a fully functional Blue Team Security Operations Center (SOC) home lab using VirtualBox.
+
+The lab consists of three interconnected virtual machines that simulate a small enterprise environment:
+
+- **Ubuntu Server 22.10** configured as the **SOC Watchtower** for centralized monitoring and remote administration.
+- **Ubuntu Desktop 22.10** configured as a Linux endpoint (DevOps Workstation).
+- **Windows 10 Enterprise** configured as a monitored Windows endpoint.
+
+Throughout the deployment process, the following objectives were successfully completed:
+
+- Installed and configured all virtual machines from official operating system images.
+- Designed an isolated virtual network using both **NAT** and **Host-Only** adapters.
+- Assigned and verified network interfaces using Linux and Windows networking tools.
+- Enabled **OpenSSH** on the Ubuntu Server for secure remote administration.
+- Established remote SSH connectivity from the Windows host to the SOC Watchtower.
+- Verified communication between the host computer and all virtual machines using ICMP connectivity testing.
+- Diagnosed and resolved Windows Defender Firewall restrictions by enabling **File and Printer Sharing (Echo Request – ICMPv4-In)** on both the Windows host and Windows virtual machine.
+- Documented each deployment phase with screenshots and technical explanations to create repeatable infrastructure documentation.
+
+This project establishes the foundation for a production-style Blue Team environment and prepares the lab for more advanced security operations, including:
+
+- Elastic Stack (ELK) deployment
 - Centralized log collection
-- Endpoint telemetry
-- Detection engineering
-- Threat hunting
-- Incident response
+- Syslog configuration
+- Windows Event Forwarding (WEF)
+- Sysmon deployment
+- Endpoint telemetry collection
+- SIEM rule creation
+- Threat detection engineering
+- Incident response investigations
+- Digital forensics exercises
+- Malware analysis
+- Attack simulation using Atomic Red Team and MITRE ATT&CK techniques
+
+The environment now provides a stable platform for continuing hands-on cybersecurity labs while developing practical experience with enterprise security monitoring, log analysis, network visibility, and Security Operations Center (SOC) workflows.
