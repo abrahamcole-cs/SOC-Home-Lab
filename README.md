@@ -104,7 +104,7 @@ To obtain the Windows 10 Enterprise ISO directly from Microsoft's website, I use
 
 <img width="1767" height="388" alt="Windows 10 Enterprise Download" src="https://github.com/user-attachments/assets/f6d405a7-44a7-40f1-b9ac-3fa4b16a780f" />
 
-> **Outcome:** Successfully downloaded the official Windows 10 Enterprise ISO, Ubuntu Server 22.10, and Ubuntu Desktop 22.10 installation images required to build the Blue Team SOC home lab infrastructure.
+> **Outcome:** Successfully downloaded the official Windows 10 Enterprise ISO, Ubuntu Server 22.04, and Ubuntu Desktop 22.04 installation images required to build the Blue Team SOC home lab infrastructure.
 
 
 
