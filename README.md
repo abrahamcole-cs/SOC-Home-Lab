@@ -597,20 +597,27 @@ During testing, the Windows workstation initially failed to respond because its 
 
 After enabling the same inbound firewall rule on the Windows workstation, all systems communicated successfully.
 
+
 #### Figure 7.6.1 – Ping Ubuntu Desktop
 
 Verified successful ICMP communication between the SOC Watchtower and the Ubuntu Desktop DevOps Workstation.
 <img width="800" height="115" alt="defender" src="https://github.com/user-attachments/assets/36c2e0d8-a5b9-48f2-be60-e98f77766ae2" />
+
+
 #### Figure 7.6.2 – Ping DevOps Workstation
 
 Confirmed successful communication between the SOC Watchtower and the DevOps Workstation over the Host-Only network.
 
 <img width="591" height="148" alt="Screenshot 2026-06-28 004114" src="https://github.com/user-attachments/assets/8aa7a4d1-9df9-46ba-991c-ecd74abd955c" />
+
+
 #### Figure 7.6.3 – Initial Windows 10 Connectivity Failure
 
 Attempted to communicate with the Windows 10 workstation. The request failed because Windows Defender Firewall was blocking inbound ICMP Echo Requests.
 
 <img width="593" height="56" alt="Screenshot 2026-06-28 004406" src="https://github.com/user-attachments/assets/f5bcc28c-d26f-4b3c-a0b6-946a649878e7" />
+
+
 #### Figure 7.6.4 – Successful Windows 10 Connectivity
 
 After enabling the **File and Printer Sharing (Echo Request – ICMPv4-In)** inbound firewall rule on the Windows 10 workstation, the SOC Watchtower successfully communicated with the endpoint.
