@@ -171,17 +171,136 @@ Configured the Windows 10 Enterprise virtual machine, which will serve as the mo
 <strong>Outcome:</strong> Successfully created and configured all three virtual machines required for the Blue Team SOC lab. The environment is now prepared for network configuration, operating system installation, and the deployment of centralized monitoring tools in subsequent phases.
 </p>
 
-### Step 4 - Configure Virtual Networking
+## Step 4 - Install and Configure the SOC Watchtower (Ubuntu Server)
 
-Configured the virtual network using NAT, Host-Only, and Internal Network adapters to enable communication between all systems while maintaining isolation from the physical network.
+The Ubuntu Server virtual machine was configured to serve as the **SOC Watchtower**, which will act as the centralized monitoring server throughout the remainder of the lab.
 
-Validated successful communication between machines.
-
-**Screenshot**
-
-*(Insert network configuration screenshot here.)*
+During installation, the server was configured with a dedicated hostname, administrative account, OpenSSH Server, and networking settings to enable remote administration and future deployment of the Elastic Stack.
 
 ---
+
+### Figure 4.1 – Select Installation Language
+
+Selected **English** as the installation language before beginning the Ubuntu Server installation.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.2 – Proxy Configuration
+
+No HTTP proxy was required for this lab environment, so the proxy configuration was left blank.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.3 – Installer Update
+
+Allowed Ubuntu to download the latest version of the installer before continuing the installation process. Updating the installer ensures the latest fixes and installation improvements are applied.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.4 – Server Profile Configuration
+
+Configured the server with the following information:
+
+- Hostname: **ubuntuwatchtowerlive**
+- Username: **defender__cole**
+
+This server will later host the centralized monitoring and security infrastructure.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.5 – OpenSSH Server Installation
+
+Enabled the **OpenSSH Server** package during installation.
+
+Installing OpenSSH allows the server to be managed remotely from another machine without requiring direct access through VirtualBox.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.6 – Ubuntu Server Installation Complete
+
+Ubuntu successfully completed installation and configured all required system packages.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.7 – First Boot
+
+After rebooting, Ubuntu successfully initialized all required system services and completed the boot process.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.8 – Initial Login
+
+Successfully authenticated using the administrator account created during installation.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.9 – Ubuntu Server Dashboard
+
+Verified successful login and confirmed the operating system version, network configuration, and system health.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.10 – Verify Network Interfaces
+
+Executed the following command to display all available network interfaces.
+
+```bash
+ip a
+```
+
+Confirmed the server received both NAT and Host-Only IP addresses, allowing internet connectivity and communication with other virtual machines.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+### Figure 4.11 – Connectivity Testing
+
+Validated communication between the SOC Watchtower and other systems using ICMP.
+
+Successful connectivity tests included:
+
+- Host Computer
+- Ubuntu Desktop (DevOps Workstation)
+- Windows 10 Workstation
+
+During testing, the Windows workstation initially failed to respond due to Windows Firewall blocking ICMP requests.
+
+After enabling ICMP Echo Requests within Windows Defender Firewall, connectivity was successfully established.
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+<img width="900" src="https://github.com/user-attachments/assets/..." />
+
+---
+
+## Outcome
+
+Successfully deployed and configured the Ubuntu Server SOC Watchtower, enabled secure remote administration through OpenSSH, verified network interfaces, and confirmed communication with all virtual machines.
+
+The monitoring server is now prepared for deployment of the Elastic Stack, centralized log collection, and future security monitoring activities.
 
 ### Step 5 - Install Ubuntu Server
 
