@@ -97,8 +97,8 @@ Created three virtual machines that simulate a small enterprise environment. Eac
 
 <ul>
   <li><strong>Ubuntu Server</strong> – SOC Watchtower (Monitoring Server)</li>
-  <li><strong>Ubuntu Desktop</strong> – Monitored Linux Endpoint</li>
-  <li><strong>Windows 10</strong> – Monitored Windows Endpoint</li>
+  <li><strong>Ubuntu Desktop</strong> – Dev OPs Workstation Endpoint</li>
+  <li><strong>Windows 10</strong> – Monitored Windows 10 Endpoint</li>
 </ul>
 
 <p>
