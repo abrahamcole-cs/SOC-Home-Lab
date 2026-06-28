@@ -84,10 +84,10 @@ The following operating systems were selected:
 - **Ubuntu Desktop 22.10 LTS** – Linux endpoint for security monitoring
 - **Windows 10 Enterprise** – Windows endpoint for telemetry collection and future threat simulations
   
-<img width="1827" height="448" alt="Screenshot 2026-06-27 232857" src="https://github.com/user-attachments/assets/2ec98f8a-1005-4ebd-8f83-d1906c14fb57" />
-<img width="1895" height="890" alt="Screenshot 2026-06-27 232845" src="https://github.com/user-attachments/assets/61074dfe-da56-4700-a29c-da976709f43e" />
 <img width="1900" height="949" alt="Screenshot 2026-06-27 232816" src="https://github.com/user-attachments/assets/4d20814b-87e7-4d62-902f-b888565ba9ba" />
+<img width="1895" height="890" alt="Screenshot 2026-06-27 232845" src="https://github.com/user-attachments/assets/61074dfe-da56-4700-a29c-da976709f43e" />
 
+<img width="1827" height="448" alt="Screenshot 2026-06-27 232857" src="https://github.com/user-attachments/assets/2ec98f8a-1005-4ebd-8f83-d1906c14fb57" />
 
 
 Ubuntu **22.10 LTS** was selected because it is a Long-Term Support (LTS) release that closely aligns with operating systems commonly deployed in enterprise environments. Using an LTS release provides long-term security updates, stability, and compatibility with modern security tools that will be installed later in the project.
