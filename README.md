@@ -80,8 +80,8 @@ Downloaded the operating system images required to build the Blue Team SOC home 
 
 The following operating systems were selected:
 
-- **Ubuntu Server 22.10** – Centralized monitoring server (SOC Watchtower)
-- **Ubuntu Desktop 22.10** – Linux endpoint for monitoring and future security testing
+- **Ubuntu Server 22.04** – Centralized monitoring server (SOC Watchtower)
+- **Ubuntu Desktop 22.04** – Linux endpoint for monitoring and future security testing
 - **Windows 10 Enterprise** – Enterprise Windows endpoint used for endpoint telemetry collection, log generation, and future attack simulations
 
 To obtain the Windows 10 Enterprise ISO directly from Microsoft's website, I used the browser's **Developer Tools** to emulate a mobile device. Microsoft provides a direct ISO download option when the site is accessed from a mobile or tablet browser, eliminating the need for the Media Creation Tool. This allowed me to download the official Windows 10 Enterprise installation image for use in the lab.
@@ -108,7 +108,7 @@ To obtain the Windows 10 Enterprise ISO directly from Microsoft's website, I use
 
 
 
-Ubuntu **22.10 LTS** was selected because it is a Long-Term Support (LTS) release that closely aligns with operating systems commonly deployed in enterprise environments. Using an LTS release provides long-term security updates, stability, and compatibility with modern security tools that will be installed later in the project.
+Ubuntu **22.04 LTS** was selected because it is a Long-Term Support (LTS) release that closely aligns with operating systems commonly deployed in enterprise environments. Using an LTS release provides long-term security updates, stability, and compatibility with modern security tools that will be installed later in the project.
 
 This operating system selection establishes a realistic foundation for deploying enterprise security monitoring solutions such as Elastic Stack, Kibana, Elastic Agent, and Sysmon.
 
