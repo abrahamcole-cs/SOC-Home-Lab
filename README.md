@@ -1,4 +1,4 @@
-# Blue Team SOC Home Lab - Infrastructure Deployment
+# Enterprise Blue Team SOC Lab
 
 ## Objective
 
