@@ -76,18 +76,35 @@ Installed Oracle VirtualBox to provide the virtualization platform used to build
 
 ### Step 2 - Download Operating System Images
 
-Downloaded the operating system images required to build the Blue Team SOC lab environment.
+Downloaded the operating system images required to build the Blue Team SOC home lab environment.
 
 The following operating systems were selected:
 
-- **Ubuntu Server 22.10 LTS** – Centralized monitoring server (SOC Watchtower)
-- **Ubuntu Desktop 22.10 LTS** – Linux endpoint for security monitoring
-- **Windows 10 Enterprise** – Windows endpoint for telemetry collection and future threat simulations
-  
-<img width="1900" height="949" alt="Screenshot 2026-06-27 232816" src="https://github.com/user-attachments/assets/4d20814b-87e7-4d62-902f-b888565ba9ba" />
-<img width="1895" height="890" alt="Screenshot 2026-06-27 232845" src="https://github.com/user-attachments/assets/61074dfe-da56-4700-a29c-da976709f43e" />
+- **Ubuntu Server 22.10** – Centralized monitoring server (SOC Watchtower)
+- **Ubuntu Desktop 22.10** – Linux endpoint for monitoring and future security testing
+- **Windows 10 Enterprise** – Enterprise Windows endpoint used for endpoint telemetry collection, log generation, and future attack simulations
 
-<img width="1767" height="388" alt="Screenshot 2026-06-27 233349" src="https://github.com/user-attachments/assets/f6d405a7-44a7-40f1-b9ac-3fa4b16a780f" />
+To obtain the Windows 10 Enterprise ISO directly from Microsoft's website, I used the browser's **Developer Tools** to emulate a mobile device. Microsoft provides a direct ISO download option when the site is accessed from a mobile or tablet browser, eliminating the need for the Media Creation Tool. This allowed me to download the official Windows 10 Enterprise installation image for use in the lab.
+
+### Windows 10 Enterprise Download Process
+
+**Figure 2.1** – Opened the Microsoft Windows download page and launched the browser's **Developer Tools (Inspect Element)**.
+
+<img width="1900" height="949" alt="Opened Developer Tools" src="https://github.com/user-attachments/assets/4d20814b-87e7-4d62-902f-b888565ba9ba" />
+
+---
+
+**Figure 2.2** – Enabled **Device Toolbar** (mobile/tablet emulation) to access Microsoft's direct Windows 10 Enterprise ISO download page.
+
+<img width="1895" height="890" alt="Enabled Device Emulation" src="https://github.com/user-attachments/assets/61074dfe-da56-4700-a29c-da976709f43e" />
+
+---
+
+**Figure 2.3** – Successfully accessed the official Windows 10 Enterprise ISO download page and selected the Windows 10 Enterprise edition for download.
+
+<img width="1767" height="388" alt="Windows 10 Enterprise Download" src="https://github.com/user-attachments/assets/f6d405a7-44a7-40f1-b9ac-3fa4b16a780f" />
+
+> **Outcome:** Successfully downloaded the official Windows 10 Enterprise ISO, Ubuntu Server 22.10, and Ubuntu Desktop 22.10 installation images required to build the Blue Team SOC home lab infrastructure.
 
 
 
