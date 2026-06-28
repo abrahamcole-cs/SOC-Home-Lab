@@ -640,8 +640,8 @@ Successfully designed, deployed, and documented a fully functional Blue Team Sec
 
 The lab consists of three interconnected virtual machines that simulate a small enterprise environment:
 
-- **Ubuntu Server 22.10** configured as the **SOC Watchtower** for centralized monitoring and remote administration.
-- **Ubuntu Desktop 22.10** configured as a Linux endpoint (DevOps Workstation).
+- **Ubuntu Server 22.04** configured as the **SOC Watchtower** for centralized monitoring and remote administration.
+- **Ubuntu Desktop 22.04** configured as a Linux endpoint (DevOps Workstation).
 - **Windows 10 Enterprise** configured as a monitored Windows endpoint.
 
 Throughout the deployment process, the following objectives were successfully completed:
