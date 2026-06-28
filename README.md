@@ -115,30 +115,61 @@ This operating system selection establishes a realistic foundation for deploying
 
 
 
-*(Insert ISO download screenshot here.)*
+<img width="1404" height="858" alt="Screenshot 2026-06-27 233757" src="https://github.com/user-attachments/assets/4a15f88d-08ab-46c6-a124-07cb59ab037a" />
 
 ---
 
 <h3>Step 3 - Create Virtual Machines</h3>
 
 <p>
-Created three virtual machines that simulate a small enterprise environment. Each virtual machine serves a specific role within the SOC lab.
+Created three virtual machines to simulate a small enterprise environment. Each virtual machine serves a dedicated role within the Blue Team SOC lab, allowing the separation of monitored endpoints from the centralized monitoring infrastructure.
 </p>
 
 <ul>
-  <li><strong>Ubuntu Server</strong> – SOC Watchtower (Monitoring Server)</li>
-  <li><strong>Ubuntu Desktop</strong> – Dev OPs Workstation Endpoint</li>
-  <li><strong>Windows 10</strong> – Monitored Windows 10 Endpoint</li>
+  <li><strong>Ubuntu Server</strong> – SOC Watchtower (Centralized Monitoring Server)</li>
+  <li><strong>Ubuntu Desktop</strong> – DevOps Workstation used to administer and manage the SOC infrastructure.</li>
+  <li><strong>Windows 10 Enterprise</strong> – Monitored Windows endpoint used to generate telemetry, security events, and future attack simulations.</li>
 </ul>
 
 <p>
-Each virtual machine was configured with dedicated CPU, memory, storage, and networking resources to support future security monitoring and centralized log collection.
+Each virtual machine was configured with dedicated CPU, memory, storage, and networking resources to closely resemble a small enterprise environment. This architecture establishes the foundation for centralized logging, endpoint monitoring, and future threat detection exercises.
 </p>
 
-<img width="1913" height="982" alt="Screenshot 2026-06-27 204652" src="https://github.com/user-attachments/assets/c87667e0-6cfe-4f7c-a920-fa58c931e1e2" />
+<hr>
 
-<p><em>Figure 1. Oracle VirtualBox displaying the three virtual machines that make up the Blue Team SOC lab infrastructure.</em></p>
----
+<h4>Figure 3.1 – DevOps Workstation Configuration</h4>
+
+<p>
+Configured the Ubuntu Desktop virtual machine, which will serve as the primary administrative workstation for managing the SOC infrastructure.
+</p>
+
+<img width="900" alt="DevOps Workstation Configuration" src="https://github.com/user-attachments/assets/56998fbe-e080-4b24-93de-36aa18da2f31" />
+
+<br><br>
+
+<h4>Figure 3.2 – SOC Watchtower Configuration</h4>
+
+<p>
+Configured the Ubuntu Server virtual machine, which will function as the centralized monitoring server responsible for hosting the future Elastic Stack and SIEM components.
+</p>
+
+<img width="900" alt="SOC Watchtower Configuration" src="https://github.com/user-attachments/assets/59806968-5fbe-41d5-a5f1-22da662d6923" />
+
+<br><br>
+
+<h4>Figure 3.3 – Windows 10 Enterprise Configuration</h4>
+
+<p>
+Configured the Windows 10 Enterprise virtual machine, which will serve as the monitored Windows endpoint for endpoint telemetry collection, event logging, and future security testing.
+</p>
+
+<img width="900" alt="Windows 10 Enterprise Configuration" src="https://github.com/user-attachments/assets/65bf7c34-2e86-426e-9588-f46eb9febf92" />
+
+<hr>
+
+<p>
+<strong>Outcome:</strong> Successfully created and configured all three virtual machines required for the Blue Team SOC lab. The environment is now prepared for network configuration, operating system installation, and the deployment of centralized monitoring tools in subsequent phases.
+</p>
 
 ### Step 4 - Configure Virtual Networking
 
