@@ -671,3 +671,32 @@ This project establishes the foundation for a production-style Blue Team environ
 - Attack simulation using Atomic Red Team and MITRE ATT&CK techniques
 
 The environment now provides a stable platform for continuing hands-on cybersecurity labs while developing practical experience with enterprise security monitoring, log analysis, network visibility, and Security Operations Center (SOC) workflows.
+---
+
+# Phase 2 – Active Directory Integration
+
+Coming Soon
+
+---
+
+# Phase 3 – SIEM Deployment
+
+Coming Soon
+
+---
+
+# Phase 4 – Endpoint Telemetry
+
+Coming Soon
+
+---
+
+# Phase 5 – Threat Detection
+
+Coming Soon
+
+---
+
+# Phase 6 – Incident Response
+
+Coming Soon
