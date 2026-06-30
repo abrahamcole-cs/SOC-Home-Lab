@@ -670,33 +670,71 @@ This project establishes the foundation for a production-style Blue Team environ
 - Malware analysis
 - Attack simulation using Atomic Red Team and MITRE ATT&CK techniques
 
-The environment now provides a stable platform for continuing hands-on cybersecurity labs while developing practical experience with enterprise security monitoring, log analysis, network visibility, and Security Operations Center (SOC) workflows.
----
+## Project Status
 
-# Phase 2 – Active Directory Integration
+The Enterprise Blue Team SOC Lab now provides a stable enterprise foundation for expanding into advanced cybersecurity operations. The core virtual infrastructure has been successfully deployed, network connectivity has been validated, and the environment is prepared for the integration of security monitoring, identity management, threat detection, and incident response capabilities.
 
-Coming Soon
-
----
-
-# Phase 3 – SIEM Deployment
-
-Coming Soon
+The following development phases will continue to expand the lab into a production-inspired enterprise security environment.
 
 ---
 
-# Phase 4 – Endpoint Telemetry
+## Project Summary
 
-Coming Soon
+Phase 1 successfully established the core infrastructure for the Enterprise Blue Team SOC Lab. A stable, multi-system virtual environment was designed, deployed, and validated to simulate a small enterprise network capable of supporting future cybersecurity operations.
+
+The completed environment currently includes:
+
+- Ubuntu Server 22.04 configured as the **SOC Watchtower** for centralized monitoring and remote administration.
+- Ubuntu Desktop 22.04 configured as the **DevOps Workstation** for Linux administration and infrastructure management.
+- Windows 10 Enterprise configured as the primary monitored Windows endpoint.
+- A dual-network architecture using **NAT** and **Host-Only** adapters to provide both internet connectivity and isolated internal communication.
+- Secure remote administration using **OpenSSH**.
+- Verified connectivity between all virtual machines through ICMP testing and network validation.
+
+Throughout this phase, practical experience was gained in virtualization, Linux administration, Windows deployment, enterprise networking, remote system administration, and infrastructure troubleshooting. These foundational skills provide the platform required for deploying enterprise security technologies and conducting realistic Blue Team operations.
+
+With the infrastructure complete, the lab is now ready to evolve into a production-inspired enterprise environment. Future phases will introduce centralized identity management, SIEM deployment, endpoint telemetry, threat detection, and incident response capabilities, allowing the environment to progressively mirror the technologies and workflows used by modern Security Operations Centers (SOCs).
 
 ---
 
-# Phase 5 – Threat Detection
+# Enterprise Lab Roadmap
 
-Coming Soon
+## ✅ Phase 1 – Enterprise Infrastructure
+**Status:** Completed
+
+Designed, deployed, and validated the foundational enterprise infrastructure supporting the Blue Team SOC environment.
 
 ---
 
-# Phase 6 – Incident Response
+## 🟡 Phase 2 – Active Directory Integration
+**Status:** In Progress
 
-Coming Soon
+Deploy a Windows Server 2019 Domain Controller and implement Microsoft Active Directory Domain Services (AD DS) to provide centralized authentication, DNS services, user management, and enterprise identity administration.
+
+---
+
+## ⏳ Phase 3 – SIEM Deployment
+**Status:** Planned
+
+Deploy the Wazuh SIEM platform to centralize log collection, monitor endpoint activity, and establish real-time security visibility across the enterprise environment.
+
+---
+
+## ⏳ Phase 4 – Endpoint Telemetry
+**Status:** Planned
+
+Integrate Windows and Linux endpoints with Wazuh Agents and Sysmon to collect detailed endpoint telemetry, Windows Event Logs, process creation events, and security-related activity for centralized analysis.
+
+---
+
+## ⏳ Phase 5 – Threat Detection & Threat Hunting
+**Status:** Planned
+
+Develop detection rules, simulate adversary techniques, investigate alerts, and perform proactive threat hunting using enterprise log data and endpoint telemetry.
+
+---
+
+## ⏳ Phase 6 – Incident Response
+**Status:** Planned
+
+Perform end-to-end incident investigations by analyzing alerts, reconstructing attack timelines, identifying indicators of compromise (IOCs), documenting findings, and implementing containment and recovery procedures.
